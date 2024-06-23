@@ -58,7 +58,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
                      <children>
-                        <TextField fx:id="tfNombre" prefWidth="200.0" promptText="Cliente" styleClass="transparent" stylesheets="@Style.css">
+                        <TextField fx:id="tfNombre" prefWidth="200.0" promptText="Lector" styleClass="transparent" stylesheets="@Style.css">
                            <font>
                               <Font name="Thonburi" size="11.0" />
                            </font>

@@ -81,14 +81,14 @@
 
 /* MODAL */
 
-.agregar-button{
+.agregar-button, .editar-button{
     -fx-background-color: #2f4f4f71;
     -fx-text-fill: 2f4f4f71;
 }
 
 .eliminar-button{
     -fx-background-color: rgba(255, 0, 0, 0.275);
-    -fx-text-fill: rgba(255, 0, 0, 0.275);
+    -fx-text-fill: red;
 }
 
 .cancelar-button{
@@ -99,3 +99,5 @@
     -fx-background-color: #2f4f4f;
     -fx-text-fill: white;
 }
+
+

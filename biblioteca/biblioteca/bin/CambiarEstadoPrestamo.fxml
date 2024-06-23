@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditarMultaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CambiarEstadoPrestamoController">
    <children>
       <BorderPane layoutX="88.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -34,7 +34,7 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label text="Cambiar Estado Multa" textFill="DARKSLATEGRAY">
+                        <Label text="Cambiar Estado Préstamo" textFill="DARKSLATEGRAY">
                            <font>
                               <Font name="Thonburi Bold" size="18.0" />
                            </font>
@@ -46,7 +46,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
                      <children>
-                        <TextField fx:id="tfMulta" prefWidth="200.0" promptText="Multa" styleClass="transparent" stylesheets="@Style.css">
+                        <TextField fx:id="tfPrestamo" prefWidth="200.0" promptText="Préstamo" styleClass="transparent" stylesheets="@Style.css">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>

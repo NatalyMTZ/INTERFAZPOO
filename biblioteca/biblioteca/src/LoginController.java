@@ -23,7 +23,7 @@ public class LoginController {
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
-        Parent mainUserParent = FXMLLoader.load(getClass().getResource("MainUser.fxml"));
+        Parent mainUserParent = FXMLLoader.load(getClass().getResource("MainAdmin.fxml"));
         Scene mainUserScene = new Scene(mainUserParent);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         
