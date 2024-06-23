@@ -1,0 +1,101 @@
+/* NAV BAR*/
+.button-navbar {
+    -fx-background-color: #2F4F4F; /* Color de fondo por defecto */
+    -fx-text-fill: white;          /* Color del texto */
+    -fx-padding: 10px 20px;        /* Relleno del botón */
+    -fx-border-radius: 5px;        /* Bordes redondeados */
+    -fx-background-radius: 5px;
+}
+
+.button-navbar:hover {
+    -fx-background-color: #ffffffaf; /* Color de fondo cuando el botón está en hover */
+    -fx-text-fill: #2F4F4F;  
+}
+
+
+/* LOGIN */
+.login-button{
+    -fx-background-color: #FFA500;
+    -fx-background-radius: 30;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+/* CATALOGO */
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+}
+
+.comboBox-filter{
+    -fx-font-family: 'Thonburi';
+    -fx-font-size: 11px;
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-text-fill: black;
+}
+
+.add-button{
+    -fx-background-color: #2F4F4F;
+    -fx-font-family: 'Thonburi';
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* TABLA */
+
+.table-view {
+    -fx-background-color: #f0f0f0; /* Color de fondo */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2f4f4f; /* Color de fondo de las cabeceras de columna */
+}
+
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #2f4f4f; /* Fondo transparente para las cabeceras */
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff; /* Color de fondo de las celdas */
+    -fx-padding: 0.2em 0.5em; /* Padding interno de las celdas */
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #f8f8f8; /* Color de fondo alternativo para filas impares */
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ffca68; /* Color de fondo cuando está seleccionada una fila */
+    -fx-text-fill: white; /* Color del texto cuando está seleccionada una fila */
+}
+
+.table-view .column-header .label {
+    -fx-font-family: "Thonburi"; /* Tipo de fuente */
+    -fx-font-size: 14px; /* Tamaño de fuente de las cabeceras */
+    -fx-font-weight: bold; /* Fuente en negrita para las cabeceras */
+    -fx-text-fill: white;
+}
+
+/* MODAL */
+
+.agregar-button{
+    -fx-background-color: #2f4f4f71;
+    -fx-text-fill: 2f4f4f71;
+}
+
+.eliminar-button{
+    -fx-background-color: rgba(255, 0, 0, 0.275);
+    -fx-text-fill: rgba(255, 0, 0, 0.275);
+}
+
+.cancelar-button{
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+}
+
+.guardar-button{
+    -fx-background-color: #2f4f4f;
+    -fx-text-fill: white;
+}

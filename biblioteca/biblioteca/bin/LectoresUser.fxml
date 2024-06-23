@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LectoresUserController">
+   <children>
+      <BorderPane layoutX="99.0" layoutY="229.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefWidth="1000.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="tfBuscar" prefHeight="28.0" prefWidth="272.0" promptText="Buscar..." styleClass="transparent" stylesheets="@Style.css">
+                                 <font>
+                                    <Font name="Thonburi" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <JFXButton fx:id="btnBuscar" style="-fx-background-color: #2F4F4F;" text="." textAlignment="CENTER" textFill="DARKSLATEGRAY">
+                                 <graphic>
+                                    <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" size="1.2em" text="" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <JFXComboBox fx:id="cmbFiltro" focusColor="#00000081" maxWidth="400.0" prefHeight="22.0" prefWidth="114.0" promptText="Filtrar por" styleClass="comboBox-filter" stylesheets="@Style.css" unFocusColor="#ebebeb">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </JFXComboBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <JFXButton fx:id="btnNuevo" styleClass="add-button" stylesheets="@Style.css" text="Nuevo Lector">
+                                 <font>
+                                    <Font name="Thonburi Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView prefHeight="200.0" prefWidth="800.0" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colIdCliente" prefWidth="100.0" text="# Cliente" />
+                <TableColumn fx:id="colNombre" prefWidth="200.0" text="Nombre" />
+                  <TableColumn fx:id="colApellido" prefWidth="200.0" text="Apellido" />
+                  <TableColumn fx:id="colCorreo" prefWidth="439.0" text="Correo" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets bottom="60.0" left="30.0" right="30.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
