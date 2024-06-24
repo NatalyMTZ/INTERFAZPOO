@@ -14,6 +14,9 @@ import javafx.stage.Stage;
 public class VerLibroController {
 
     @FXML
+    private JFXButton btnAgregarEdicion;
+
+    @FXML
     private JFXButton btnCancelar;
 
     @FXML
@@ -21,9 +24,6 @@ public class VerLibroController {
 
     @FXML
     private JFXButton btnEliminar;
-
-    @FXML
-    private JFXButton btnGuardar;
 
     @FXML
     private Label lblLibroTitulo;
@@ -42,9 +42,6 @@ public class VerLibroController {
 
     @FXML
     private void initialize() {
-        btnGuardar.setOnAction(event -> {
-            // Implement the save action
-        });
 
         btnCancelar.setOnAction(event -> {
             // Close the modal
@@ -62,6 +59,14 @@ public class VerLibroController {
                 e.printStackTrace();
             }
         });
+
+        btnAgregarEdicion.setOnAction(event -> {
+            try {
+                openAgregarEdicionModal();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     private void openEditarLibroModal() throws IOException {
@@ -75,6 +80,22 @@ public class VerLibroController {
 
         Stage newStage = new Stage();
         newStage.setTitle("Libro");
+        newStage.initModality(Modality.APPLICATION_MODAL);
+        newStage.setScene(new Scene(pane));
+        newStage.show();
+    }
+
+    private void openAgregarEdicionModal() throws IOException {
+        // Cerrar el modal actual
+        Stage currentStage = (Stage) btnEditar.getScene().getWindow();
+        currentStage.close();
+
+        // Cargar el nuevo FXML y abrir el nuevo modal
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AgregarEdicion.fxml"));
+        AnchorPane pane = loader.load();
+
+        Stage newStage = new Stage();
+        newStage.setTitle("Agregar Edición");
         newStage.initModality(Modality.APPLICATION_MODAL);
         newStage.setScene(new Scene(pane));
         newStage.show();

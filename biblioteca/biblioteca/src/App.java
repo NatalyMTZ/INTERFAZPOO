@@ -10,7 +10,7 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         try {
             // Cargar el archivo FXML
-            Parent root = FXMLLoader.load(getClass().getResource("VerLector.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("AgregarEdicion.fxml"));
             
             // Crear la escena con el root
             Scene scene = new Scene(root);
